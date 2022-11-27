@@ -138,7 +138,12 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  var genPass = "";
+  for (var i = 0; i < characterLength; i++) {
+    genPass = genPass + selectedCharacter[getRandom()];
+  }
 
+  return genPass;
 }
 
 // Get references to the #generate element

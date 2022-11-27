@@ -90,7 +90,43 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  selectedCharacter = [];
+  characterLength = parseInt(
+    prompt(
+      "How many characters would you like your password to be? (minimum 10 characters, maximum 64 characters"
+    )
+  );
 
+  if (isNaN(characterLength) || characterLength < 10 || characterLength > 64) {
+    alert(
+      "Please try again. Character length must be a number, between 10 - 64 characters."
+    );
+    return false;
+  }
+
+  if (
+    confirm("Would you like to include special characters in your password?")
+  ) {
+    selectedCharacter = selectedCharacter.concat(specialCharacters);
+  }
+
+  if (confirm("Would you like to include numbers in your password?")) {
+    selectedCharacter = selectedCharacter.concat(numericCharacters);
+  }
+
+  if (
+    confirm("Would you like to include lowercase letters in your password?")
+  ) {
+    selectedCharacter = selectedCharacter.concat(lowerCasedCharacters);
+  }
+
+  if (
+    confirm("Would you like to include uppercase letters in your password?")
+  ) {
+    selectedCharacter = selectedCharacter.concat(upperCasedCharacters);
+  }
+
+  return true;
 }
 
 // Function for getting a random element from an array

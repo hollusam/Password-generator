@@ -9,7 +9,7 @@ N/A
 
 ## Usage
 
-This code can be used by any company who is looking to analyse their company finances.
+This password generator can be used by users to generate a strong random password between 10 and 64 characters and containing letters, symbols and numbers.
 
 ## Screenshot
 
@@ -19,7 +19,7 @@ This code can be used by any company who is looking to analyse their company fin
 
 Samuel: https://instagram.com/hollusam
 
-Project link: https://hollusam.github.io/Console-Finances/
+Project link: https://hollusam.github.io/Password-generator/
 
 ## Acknowledgement
 

@@ -126,8 +126,9 @@ function getPasswordOptions() {
     selectedCharacter = selectedCharacter.concat(upperCasedCharacters);
   } else {
     alert('You must select at least one character set');
+    return false;
   } 
-  return false;
+  return true;
 }
 
 

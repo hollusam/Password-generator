@@ -124,10 +124,12 @@ function getPasswordOptions() {
     confirm("Would you like to include uppercase letters in your password?")
   ) {
     selectedCharacter = selectedCharacter.concat(upperCasedCharacters);
-  }
-
-  return true;
+  } else {
+    alert('You must select at least one character set');
+  } 
+  return false;
 }
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
